@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+</head>
+
+<body ng-app="">
+    <h3>ng-srcset example</h3>
+    <div ng-init="myVar = 'tajmahal.jpg'">
+        <h1>Tajmahal</h1>
+        <img ng-srcset="{{myVar}}">
+    </div>
+    <p>This example could use the original srcset attribute, but with AngularJS code inside the value, it is better to
+        use the ng-srcset attribute instead.</p>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+</head>
+<body ng-app="myApp" ng-controller="myCtrl">
+    <h3>ng-style directive</h3>
+        <h1 ng-style="myObj">Welcome to JavaTpoint!</h1>  
+        <script>  
+            var app = angular.module("myApp", []);  
+            app.controller("myCtrl", function($scope) {  
+            $scope.myObj = {  
+                "color" : "white",  
+                "background-color" : "brown",  
+                "font-size" : "40px",  
+                "padding" : "40px"  
+            }  
+            });  
+        </script>  
+</body>
+</html>

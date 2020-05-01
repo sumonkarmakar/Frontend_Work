@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+</head>
+
+<body ng-app="">
+    <h3>ng-if example</h3>
+    Keep HTML: <input type="checkbox" ng-model="myVar" ng-init="myVar = true">
+    <div ng-if="myVar">
+        <h1>Welcome to JavaTpoint!</h1>
+        <p>A solution of all technologies..</p>
+        <hr>
+    </div>
+    <p>If you uncheck the checkbox then DIV element will be removed.</p>
+    <p>If you check the checkbox then DIV element will return.</p>
+</body>
+
+</html>

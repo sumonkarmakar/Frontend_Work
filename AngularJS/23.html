@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <style>
+        .striped {
+            color: white;
+            background-color: grey;
+        }
+    </style>
+</head>
+
+<body ng-app="myApp">
+    <h3>ng-class-even example</h3>
+    <table ng-controller="myCtrl">
+        <tr ng-repeat="x in records" ng-class-even="'striped'">
+            <td>{{x.Name}}</td>
+            <td>{{x.Country}}</td>
+        </tr>
+    </table>
+
+    <script>
+        var app = angular.module("myApp", []);
+        app.controller("myCtrl", function ($scope) {
+            $scope.records = [
+                {
+                    "Name": "Ajeet Kumar",
+                    "Country": "India"
+                },
+                {
+                    "Name": "Suresh Prabhu",
+                    "Country": "India"
+                },
+                {
+                    "Name": "Donald Trump",
+                    "Country": "USA"
+                },
+                {
+                    "Name": "Nawaz Sharif",
+                    "Country": "Pakistan"
+                }
+            ]
+        });  
+    </script>
+</body>
+
+</html>

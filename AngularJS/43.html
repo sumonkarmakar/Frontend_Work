@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+</head>
+
+<body ng-app="">
+    <h3>ng-list example</h3>
+    <div ng-app="">
+        <p>Write some names in the input field, use a comma to separate them:</p>
+        <input ng-model="customers" ng-list />
+        <p>This example will convert your input into an array, one item for each name:</p>
+        <pre>{{customers}}</pre>
+    </div>
+</body>
+
+</html>

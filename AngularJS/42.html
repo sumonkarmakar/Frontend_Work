@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+</head>
+<body ng-app="">
+    <h3>ng-key-up example</h3>
+    <p>Press and leave any key within the input box.</p>  
+<input ng-keyup="count = count + 1" ng-init="count=0" />  
+<h1>{{count}}</h1>  
+<p>Every time you leave a key after pressing in the input field, this will increase the value of the variable "count".</p>  
+</body>
+</html>

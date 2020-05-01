@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+</head>
+
+<body>
+    <h3>ng-controller example</h3>
+    <div ng-app="myApp" ng-controller="myCtrl">
+        Full Name: {{firstName + " " + lastName}}
+    </div>
+    <script>
+        var app = angular.module('myApp', []);
+        app.controller('myCtrl', function ($scope) {
+            $scope.firstName = "Aryan";
+            $scope.lastName = "Jaiswal";
+        });  
+    </script>
+    <p>In this example you can see how to define a controller, and how to use variables made for the scope.</p>
+</body>
+
+</html>

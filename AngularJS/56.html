@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+</head>
+
+<body ng-app="myApp" ng-controller="myCtrl">
+    <h3>ng-submit example 1</h3>
+    <form ng-submit="myFunc()">
+        <input type="text">
+        <input type="submit">
+    </form>
+    <p>{{myTxt}}</p>
+    <p>In this example you can see, how an AngularJS function is executed when a form is submitted.</p>
+    <script>
+        var app = angular.module("myApp", []);
+        app.controller("myCtrl", function ($scope) {
+            $scope.myTxt = "Nothing is submitted.";
+            $scope.myFunc = function () {
+                $scope.myTxt = "Submit button clicked successfully.";
+            }
+        });  
+    </script>
+</body>
+
+</html>

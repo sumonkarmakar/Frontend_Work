@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+</head>
+
+<body ng-app="">
+    <h3>ng-cut directive example</h3>
+    <input ng-cut="count = count + 1" ng-init="count=0" value="Cut this text" />
+    <p>The text has been cut<strong> {{count}} </strong>times.</p>
+    <p>This example shows that every time you cut the content in the input field, it will increase the value of the
+        variable "count".</p>
+</body>
+
+</html>
